@@ -1,4 +1,4 @@
 Flatshadow
 ==========
 
-Flatshadow is a little CSS framework.
+Flatshadow is a CSS framework using LESS code.
