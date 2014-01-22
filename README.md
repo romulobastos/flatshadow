@@ -9,7 +9,7 @@ https://github.com/RomuloBastos/Flatshadow/
 
 --------------------------------------------------
 Demo Page:
-romulobastos.github.io/Flatshadow/
+http://romulobastos.github.io/Flatshadow/
 
 --------------------------------------------------
 View on Codepen:
