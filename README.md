@@ -13,7 +13,7 @@ http://devromulobastos.github.io/Flatshadow/
 
 --------------------------------------------------
 View on Codepen:
-http://codepen.io/devromulobastos/pen/xAmcv
+http://codepen.io/romulobastos/pen/xAmcv
 
 
 Thank you for visit!
