@@ -5,11 +5,11 @@ Flatshadow is a CSS framework using LESS code.
 
 --------------------------------------------------
 Download Page:
-https://github.com/devromulobastos/Flatshadow/
+https://github.com/romulobastos/Flatshadow/
 
 --------------------------------------------------
 Demo Page:
-http://devromulobastos.github.io/Flatshadow/
+http://romulobastos.github.io/Flatshadow/
 
 --------------------------------------------------
 View on Codepen:
