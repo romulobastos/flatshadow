@@ -1,11 +1,7 @@
-Flatshadow
+Flatshadow UI
 ==================================================
 
-Flatshadow is a CSS framework using LESS code.
-
---------------------------------------------------
-Download Page:
-https://github.com/romulobastos/Flatshadow/
+A pack of simple buttons using LESS.
 
 --------------------------------------------------
 Demo Page:
@@ -16,4 +12,22 @@ View on Codepen:
 http://codepen.io/romulobastos/pen/xAmcv
 
 
-Thank you for visit!
+--------------------------------------------------
+Colors
+ - light
+ - dark
+ - blue
+ - purple
+ - pink
+ - red
+ - orange
+ - yellos
+
+Formats
+ - Retangular
+ - Rounded
+    
+--------------------------------------------------
+
+
+Thank you for comming!

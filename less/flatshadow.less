@@ -2,17 +2,17 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:700);
 
 /* Variables */
-@bg:						#DADADA url('https://raw2.github.com/RomuloBastos/Flatshadow/master/img/bg-pattern.png') 0 0 repeat;
-@flatshadow:		#DDDDDD;
+@bg: #DADADA url('../img/bg-pattern.png') 0 0 repeat;
+@flatshadow: #DDDDDD;
 
 /* Styles */
-@dark:					#63696C;
-@blue:					#77CCEE;
-@purple:				#CC77EE;
-@pink:					#EE77CC;
-@red:						#EE6666;
-@orange:				#FF8844;
-@yellow:				#FFCC66;
+@dark: #63696C;
+@blue: #77CCEE;
+@purple: #CC77EE;
+@pink: #EE77CC;
+@red: #EE6666;
+@orange: #FF8844;
+@yellow: #FFCC66;
 
 /* Mixins */
 .space (@m: 0px, @p: 0px, @b: 0px) {
@@ -22,10 +22,10 @@
 }
 .rounded (@radius: 5px) {
 	-webkit-border-radius: @radius;
-		 -moz-border-radius: @radius;
-			-ms-border-radius: @radius;
-			 -o-border-radius: @radius;
-					border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
 }
 .gradient(@cor1: #CCCCCC, @cor2: #AAAAAA) {
 	background: @cor1;
@@ -40,45 +40,45 @@
 }
 .btn3D(@cor: #DDDDDD, @size: 2px) {
 	-webkit-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2) ;
-		 -moz-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
-			-ms-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
-			 -o-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
-					box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
+	-ms-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
+	-o-box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
+	box-shadow: 0px @size 0px @cor, 0px 2px 4px rgba(0,0,0,.2);
 }
 .noShadow() {
 	-webkit-box-shadow: none;
-		 -moz-box-shadow: none;
-			-ms-box-shadow: none;
-			 -o-box-shadow: none;
-					box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
 }
 .boxsizing(@val) {
 	-webkit-box-sizing: @val;
-		 -moz-box-sizing: @val;
-			-ms-box-sizing: @val;
-			 -o-box-sizing: @val;
-					box-sizing: @val;
+	-moz-box-sizing: @val;
+	-ms-box-sizing: @val;
+	-o-box-sizing: @val;
+	box-sizing: @val;
 }
 .shadow(@l: 0, @t: 2px, @s: 2px, @cor: #000000) {
 	-webkit-box-shadow: @l @t @s @cor;
-		 -moz-box-shadow: @l @t @s @cor;
-			-ms-box-shadow: @l @t @s @cor;
-			 -o-box-shadow: @l @t @s @cor;
-					box-shadow: @l @t @s @cor;
+	-moz-box-shadow: @l @t @s @cor;
+	-ms-box-shadow: @l @t @s @cor;
+	-o-box-shadow: @l @t @s @cor;
+	box-shadow: @l @t @s @cor;
 }
 .transition(@t: 0.1s, @type: linear) {
 	-webkit-transition: @t @type;
-		 -moz-transition: @t @type;
-			-ms-transition: @t @type;
-			 -o-transition: @t @type;
-					transition: @t @type;
+	-moz-transition: @t @type;
+	-ms-transition: @t @type;
+	-o-transition: @t @type;
+	transition: @t @type;
 }
 .transform(@val) {
 	-webkit-transform: @val;
-		 -moz-transform: @val;
-			-ms-transform: @val;
-			 -o-transform: @val;
-					transform: @val;
+	-moz-transform: @val;
+	-ms-transform: @val;
+	-o-transform: @val;
+	transform: @val;
 }
 .bg(@val) {
 	background: @val;
@@ -143,18 +143,18 @@ h1, h2, h3, h4, h5, h6 {
 	.bg(fade( darken(@flatshadow, 20%), 15%) );
 	.space(10px 10px 0px 0px, 20px 16px 20px 20px);
 	.f(left);
-
+	
 	/* Title */
 	h1, h2, h3, h4, h5, h6 {
 		.space(0 0 5px 0, 0, 0);
 		.lineH(100%);
 	}
-
+	
 	/* Lists */
 	ul {
 		.space();
 		list-style: none;
-
+		
 		li {
 			.space();
 			display: inline-block;
@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Blue */
 			&.blue {
 				a {
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Purple */
 			&.purple {
 				a {
@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Pink */
 			&.pink {
 				a {
@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Red */
 			&.red {
 				a {
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Orange */
 			&.orange {
 				a {
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 					&:active { .noShadow(); }
 				}
 			}
-
+			
 			/* Yellow */
 			&.yellow {
 				a {
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 				}
 			}
 			
-
+			
 		}
 	}
 	
@@ -379,49 +379,49 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
-
+	
 	/* Box Background Dark */
 	&.dark {
 		.bg(fade( darken(@dark, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@dark, 10%); }
 	}
-
+	
 	/* Box Background Blue */
 	&.blue {
 		.bg(fade( darken(@blue, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@blue, 30%); }
 	}
-
+	
 	/* Box Background Purple */
 	&.purple {
 		.bg(fade( darken(@purple, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@purple, 20%); }
 	}
-
+	
 	/* Box Background Pink */
 	&.pink {
 		.bg(fade( darken(@pink, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@pink, 20%); }
 	}
-
+	
 	/* Box Background Red */
 	&.red {
 		.bg(fade( darken(@red, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@red, 10%); }
 	}
-
+	
 	/* Box Background Orange */
 	&.orange {
 		.bg(fade( darken(@orange, 0%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color:  darken(@orange, 10%); }
 	}
-
+	
 	/* Box Background Yellow */
 	&.yellow {
 		.bg(fade( darken(@yellow, 15%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@yellow, 25%); }
 	}
-
+	
 }
 
 .clear {
