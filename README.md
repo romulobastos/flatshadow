@@ -5,7 +5,7 @@ A pack of simple buttons using LESS.
 
 --------------------------------------------------
 Demo Page:
-http://romulobastos.github.io/Flatshadow/
+http://romulobastos.github.io/flatshadow/
 
 --------------------------------------------------
 View on Codepen:
