@@ -1,0 +1,564 @@
+/* Font Face - Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:700);
+/* Variables */
+/* Styles */
+/* Mixins */
+.hide {
+  display: none;
+}
+.bold {
+  font-weight: bold;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/* Demo Styles */
+html {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 30px;
+  border: 0px;
+  background: #DADADA url('../img/bg-pattern.png') 0 0 repeat;
+  color: #777777;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+hr {
+  margin: 10px 0 20px 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0px;
+  border: 0px;
+  line-height: 100%;
+}
+/* Flatshadow Styles */
+.flat-block {
+  background: rgba(170, 170, 170, 0.15);
+  margin: 10px 10px 0px 0px;
+  padding: 20px 16px 20px 20px;
+  border: 0px;
+  float: left;
+  /* Box Background Dark */
+  /* Box Background Blue */
+  /* Box Background Purple */
+  /* Box Background Pink */
+  /* Box Background Orange */
+  /* Box Background Yellow */
+}
+.flat-block.dark {
+  background: rgba(99, 105, 108, 0.15);
+}
+.flat-block.dark h1,
+.flat-block.dark h2,
+.flat-block.dark h3,
+.flat-block.dark h4,
+.flat-block.dark h5,
+.flat-block.dark h6 {
+  color: #4b4f51;
+}
+.flat-block.blue {
+  background: rgba(119, 204, 238, 0.15);
+}
+.flat-block.blue h1,
+.flat-block.blue h2,
+.flat-block.blue h3,
+.flat-block.blue h4,
+.flat-block.blue h5,
+.flat-block.blue h6 {
+  color: #1788b5;
+}
+.flat-block.purple {
+  background: rgba(204, 119, 238, 0.15);
+}
+.flat-block.purple h1,
+.flat-block.purple h2,
+.flat-block.purple h3,
+.flat-block.purple h4,
+.flat-block.purple h5,
+.flat-block.purple h6 {
+  color: #aa1ce3;
+}
+.flat-block.pink {
+  background: rgba(238, 119, 204, 0.15);
+}
+.flat-block.pink h1,
+.flat-block.pink h2,
+.flat-block.pink h3,
+.flat-block.pink h4,
+.flat-block.pink h5,
+.flat-block.pink h6 {
+  color: #e31caa;
+}
+.flat-block.orange {
+  background: rgba(255, 136, 68, 0.15);
+}
+.flat-block.orange h1,
+.flat-block.orange h2,
+.flat-block.orange h3,
+.flat-block.orange h4,
+.flat-block.orange h5,
+.flat-block.orange h6 {
+  color: #ff6811;
+}
+.flat-block.yellow {
+  background: rgba(255, 179, 25, 0.15);
+}
+.flat-block.yellow h1,
+.flat-block.yellow h2,
+.flat-block.yellow h3,
+.flat-block.yellow h4,
+.flat-block.yellow h5,
+.flat-block.yellow h6 {
+  color: #e59900;
+}
+/* Title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+  padding: 0;
+  border: 0;
+  line-height: 100%;
+}
+/* Lists */
+ul {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style: none;
+}
+ul li {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: inline-block;
+}
+ul li a {
+  background: #f1f1f1;
+  margin: 0 4px 0 0px;
+  padding: 10px 20px;
+  border: 0;
+  float: left;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 3px 0 #b7b7b7;
+  -moz-box-shadow: 2px 3px 0 #b7b7b7;
+  -ms-box-shadow: 2px 3px 0 #b7b7b7;
+  -o-box-shadow: 2px 3px 0 #b7b7b7;
+  box-shadow: 2px 3px 0 #b7b7b7;
+  color: #919191;
+  /* Active State Button */
+  /* Dark Gray */
+  /* Blue */
+  /* Purple */
+  /* Pink */
+  /* Orange */
+  /* Yellow */
+}
+ul li a:hover,
+ul li a:focus {
+  background: #ffffff;
+  -webkit-box-shadow: 2px 3px 0 #d0d0d0;
+  -moz-box-shadow: 2px 3px 0 #d0d0d0;
+  -ms-box-shadow: 2px 3px 0 #d0d0d0;
+  -o-box-shadow: 2px 3px 0 #d0d0d0;
+  box-shadow: 2px 3px 0 #d0d0d0;
+  color: #777777;
+}
+ul li a:active {
+  -webkit-transform: translate(2px, 3px);
+  -moz-transform: translate(2px, 3px);
+  -ms-transform: translate(2px, 3px);
+  -o-transform: translate(2px, 3px);
+  transform: translate(2px, 3px);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.active {
+  background: #919191;
+  -webkit-box-shadow: 2px 3px 0 #777777;
+  -moz-box-shadow: 2px 3px 0 #777777;
+  -ms-box-shadow: 2px 3px 0 #777777;
+  -o-box-shadow: 2px 3px 0 #777777;
+  box-shadow: 2px 3px 0 #777777;
+  color: #ffffff;
+}
+ul li a.active:hover,
+ul li a.active:focus {
+  background: #9d9d9d;
+  -webkit-box-shadow: 2px 3px 0 #848484;
+  -moz-box-shadow: 2px 3px 0 #848484;
+  -ms-box-shadow: 2px 3px 0 #848484;
+  -o-box-shadow: 2px 3px 0 #848484;
+  box-shadow: 2px 3px 0 #848484;
+}
+ul li a.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.dark {
+  background: #63696C;
+  -webkit-box-shadow: 2px 3px 0 #3e4244;
+  -moz-box-shadow: 2px 3px 0 #3e4244;
+  -ms-box-shadow: 2px 3px 0 #3e4244;
+  -o-box-shadow: 2px 3px 0 #3e4244;
+  box-shadow: 2px 3px 0 #3e4244;
+  color: #262829;
+}
+ul li a.dark:hover,
+ul li a.dark:focus {
+  background: #7c8386;
+  -webkit-box-shadow: 2px 3px 0 #575c5f;
+  -moz-box-shadow: 2px 3px 0 #575c5f;
+  -ms-box-shadow: 2px 3px 0 #575c5f;
+  -o-box-shadow: 2px 3px 0 #575c5f;
+  box-shadow: 2px 3px 0 #575c5f;
+  color: #3e4244;
+}
+ul li a.dark:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.dark.active {
+  background: #323537;
+  -webkit-box-shadow: 2px 3px 0 #000000;
+  -moz-box-shadow: 2px 3px 0 #000000;
+  -ms-box-shadow: 2px 3px 0 #000000;
+  -o-box-shadow: 2px 3px 0 #000000;
+  box-shadow: 2px 3px 0 #000000;
+  color: #cbced0;
+}
+ul li a.dark.active:hover,
+ul li a.dark.active:focus {
+  background: #3e4244;
+  -webkit-box-shadow: 2px 3px 0 #000000;
+  -moz-box-shadow: 2px 3px 0 #000000;
+  -ms-box-shadow: 2px 3px 0 #000000;
+  -o-box-shadow: 2px 3px 0 #000000;
+  box-shadow: 2px 3px 0 #000000;
+}
+ul li a.dark.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.blue {
+  background: #77CCEE;
+  -webkit-box-shadow: 2px 3px 0 #4abbe8;
+  -moz-box-shadow: 2px 3px 0 #4abbe8;
+  -ms-box-shadow: 2px 3px 0 #4abbe8;
+  -o-box-shadow: 2px 3px 0 #4abbe8;
+  box-shadow: 2px 3px 0 #4abbe8;
+  color: #1788b5;
+}
+ul li a.blue:hover,
+ul li a.blue:focus {
+  background: #a4ddf4;
+  -webkit-box-shadow: 2px 3px 0 #77CCEE;
+  -moz-box-shadow: 2px 3px 0 #77CCEE;
+  -ms-box-shadow: 2px 3px 0 #77CCEE;
+  -o-box-shadow: 2px 3px 0 #77CCEE;
+  box-shadow: 2px 3px 0 #77CCEE;
+  color: #1788b5;
+}
+ul li a.blue:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.blue.active {
+  background: #1788b5;
+  -webkit-box-shadow: 2px 3px 0 #116688;
+  -moz-box-shadow: 2px 3px 0 #116688;
+  -ms-box-shadow: 2px 3px 0 #116688;
+  -o-box-shadow: 2px 3px 0 #116688;
+  box-shadow: 2px 3px 0 #116688;
+  color: #e8f7fc;
+}
+ul li a.blue.active:hover,
+ul li a.blue.active:focus {
+  background: #1a99cc;
+  -webkit-box-shadow: 2px 3px 0 #14779f;
+  -moz-box-shadow: 2px 3px 0 #14779f;
+  -ms-box-shadow: 2px 3px 0 #14779f;
+  -o-box-shadow: 2px 3px 0 #14779f;
+  box-shadow: 2px 3px 0 #14779f;
+}
+ul li a.blue.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.purple {
+  background: #CC77EE;
+  -webkit-box-shadow: 0px 3px 0 #bb4ae8;
+  -moz-box-shadow: 0px 3px 0 #bb4ae8;
+  -ms-box-shadow: 0px 3px 0 #bb4ae8;
+  -o-box-shadow: 0px 3px 0 #bb4ae8;
+  box-shadow: 0px 3px 0 #bb4ae8;
+  color: #8817b5;
+}
+ul li a.purple:hover,
+ul li a.purple:focus {
+  background: #dda4f4;
+  -webkit-box-shadow: 0px 3px 0 #CC77EE;
+  -moz-box-shadow: 0px 3px 0 #CC77EE;
+  -ms-box-shadow: 0px 3px 0 #CC77EE;
+  -o-box-shadow: 0px 3px 0 #CC77EE;
+  box-shadow: 0px 3px 0 #CC77EE;
+  color: #8817b5;
+}
+ul li a.purple:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.purple.active {
+  background: #8817b5;
+  -webkit-box-shadow: 2px 3px 0 #661188;
+  -moz-box-shadow: 2px 3px 0 #661188;
+  -ms-box-shadow: 2px 3px 0 #661188;
+  -o-box-shadow: 2px 3px 0 #661188;
+  box-shadow: 2px 3px 0 #661188;
+  color: #f7e8fc;
+}
+ul li a.purple.active:hover,
+ul li a.purple.active:focus {
+  background: #991acc;
+  -webkit-box-shadow: 2px 3px 0 #77149f;
+  -moz-box-shadow: 2px 3px 0 #77149f;
+  -ms-box-shadow: 2px 3px 0 #77149f;
+  -o-box-shadow: 2px 3px 0 #77149f;
+  box-shadow: 2px 3px 0 #77149f;
+}
+ul li a.purple.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.pink {
+  background: #EE77CC;
+  -webkit-box-shadow: 2px 3px 0 #e84abb;
+  -moz-box-shadow: 2px 3px 0 #e84abb;
+  -ms-box-shadow: 2px 3px 0 #e84abb;
+  -o-box-shadow: 2px 3px 0 #e84abb;
+  box-shadow: 2px 3px 0 #e84abb;
+  color: #b51788;
+}
+ul li a.pink:hover,
+ul li a.pink:focus {
+  background: #f4a4dd;
+  -webkit-box-shadow: 2px 3px 0 #EE77CC;
+  -moz-box-shadow: 2px 3px 0 #EE77CC;
+  -ms-box-shadow: 2px 3px 0 #EE77CC;
+  -o-box-shadow: 2px 3px 0 #EE77CC;
+  box-shadow: 2px 3px 0 #EE77CC;
+  color: #b51788;
+}
+ul li a.pink:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.pink.active {
+  background: #b51788;
+  -webkit-box-shadow: 2px 3px 0 #881166;
+  -moz-box-shadow: 2px 3px 0 #881166;
+  -ms-box-shadow: 2px 3px 0 #881166;
+  -o-box-shadow: 2px 3px 0 #881166;
+  box-shadow: 2px 3px 0 #881166;
+  color: #fce8f7;
+}
+ul li a.pink.active:hover,
+ul li a.pink.active:focus {
+  background: #cc1a99;
+  -webkit-box-shadow: 2px 3px 0 #9f1477;
+  -moz-box-shadow: 2px 3px 0 #9f1477;
+  -ms-box-shadow: 2px 3px 0 #9f1477;
+  -o-box-shadow: 2px 3px 0 #9f1477;
+  box-shadow: 2px 3px 0 #9f1477;
+}
+ul li a.pink.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.orange {
+  background: #FF8844;
+  -webkit-box-shadow: 2px 3px 0 #ff6811;
+  -moz-box-shadow: 2px 3px 0 #ff6811;
+  -ms-box-shadow: 2px 3px 0 #ff6811;
+  -o-box-shadow: 2px 3px 0 #ff6811;
+  box-shadow: 2px 3px 0 #ff6811;
+  color: #aa3e00;
+}
+ul li a.orange:hover,
+ul li a.orange:focus {
+  background: #ffa877;
+  -webkit-box-shadow: 2px 3px 0 #FF8844;
+  -moz-box-shadow: 2px 3px 0 #FF8844;
+  -ms-box-shadow: 2px 3px 0 #FF8844;
+  -o-box-shadow: 2px 3px 0 #FF8844;
+  box-shadow: 2px 3px 0 #FF8844;
+  color: #aa3e00;
+}
+ul li a.orange:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.orange.active {
+  background: #dd5000;
+  -webkit-box-shadow: 2px 3px 0 #aa3e00;
+  -moz-box-shadow: 2px 3px 0 #aa3e00;
+  -ms-box-shadow: 2px 3px 0 #aa3e00;
+  -o-box-shadow: 2px 3px 0 #aa3e00;
+  box-shadow: 2px 3px 0 #aa3e00;
+  color: #ffd9c3;
+}
+ul li a.orange.active:hover,
+ul li a.orange.active:focus {
+  background: #f65a00;
+  -webkit-box-shadow: 2px 3px 0 #c34700;
+  -moz-box-shadow: 2px 3px 0 #c34700;
+  -ms-box-shadow: 2px 3px 0 #c34700;
+  -o-box-shadow: 2px 3px 0 #c34700;
+  box-shadow: 2px 3px 0 #c34700;
+}
+ul li a.orange.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.yellow {
+  background: #FFCC66;
+  -webkit-box-shadow: 2px 3px 0 #ffbb33;
+  -moz-box-shadow: 2px 3px 0 #ffbb33;
+  -ms-box-shadow: 2px 3px 0 #ffbb33;
+  -o-box-shadow: 2px 3px 0 #ffbb33;
+  box-shadow: 2px 3px 0 #ffbb33;
+  color: #cc8800;
+}
+ul li a.yellow:hover,
+ul li a.yellow:focus {
+  background: #ffdd99;
+  -webkit-box-shadow: 2px 3px 0 #FFCC66;
+  -moz-box-shadow: 2px 3px 0 #FFCC66;
+  -ms-box-shadow: 2px 3px 0 #FFCC66;
+  -o-box-shadow: 2px 3px 0 #FFCC66;
+  box-shadow: 2px 3px 0 #FFCC66;
+  color: #cc8800;
+}
+ul li a.yellow:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+ul li a.yellow.active {
+  background: #ffaa00;
+  -webkit-box-shadow: 2px 3px 0 #cc8800;
+  -moz-box-shadow: 2px 3px 0 #cc8800;
+  -ms-box-shadow: 2px 3px 0 #cc8800;
+  -o-box-shadow: 2px 3px 0 #cc8800;
+  box-shadow: 2px 3px 0 #cc8800;
+  color: #ffeecc;
+}
+ul li a.yellow.active:hover,
+ul li a.yellow.active:focus {
+  background: #ffb219;
+  -webkit-box-shadow: 2px 3px 0 #e59900;
+  -moz-box-shadow: 2px 3px 0 #e59900;
+  -ms-box-shadow: 2px 3px 0 #e59900;
+  -o-box-shadow: 2px 3px 0 #e59900;
+  box-shadow: 2px 3px 0 #e59900;
+}
+ul li a.yellow.active:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.pill {
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  border-radius: 3em;
+}
+.clear {
+  clear: both;
+  padding: 15px 0;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.nospaces {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}

@@ -15,16 +15,15 @@ var path = {
 
 // local
 var local = {
-	dest:		'./dist',
-	views:		'./dist/',
-	styles:		'./dist/css/',
-	images:		'./dist/img/',
+	dest:		'./',
+	styles:		'./css/',
+	images:		'./img/',
 }
 
 // template engine / html
 gulp.task('views', function () {
 	return gulp.src(path.views)
-	.pipe(gulp.dest(local.views));
+	.pipe(gulp.dest(local.dest));
 });
 
 // less compiler
