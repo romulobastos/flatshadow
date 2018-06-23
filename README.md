@@ -1,33 +1,21 @@
-Flatshadow UI
-==================================================
+# Flatshadow UI
+### A pack of `.flat` buttons made with LESS.
 
-A pack of simple buttons using LESS.
+Demo Page: http://romulobastos.github.io/flatshadow/
 
---------------------------------------------------
-Demo Page:
-http://romulobastos.github.io/flatshadow/
+Test on Codepen: http://codepen.io/romulobastos/pen/xAmcv
 
---------------------------------------------------
-View on Codepen:
-http://codepen.io/romulobastos/pen/xAmcv
+---
+  
+#### Example
+```
+<li><a class="flat pill blue" href="#">Flat Button</a></li>`
+```  
+#### Colors
+`.light` `.dark` `.blue` `.purple` `.pink` `.orange` `.yellow`
 
+#### Formats
+`.retangular` `.rounded` `.pill`
 
---------------------------------------------------
-Colors
- - light
- - dark
- - blue
- - purple
- - pink
- - red
- - orange
- - yellos
-
-Formats
- - Retangular
- - Rounded
-    
---------------------------------------------------
-
-
+---
 Thank you for comming!

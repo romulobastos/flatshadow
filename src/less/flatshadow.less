@@ -10,7 +10,6 @@
 @blue: #77CCEE;
 @purple: #CC77EE;
 @pink: #EE77CC;
-@red: #EE6666;
 @orange: #FF8844;
 @yellow: #FFCC66;
 
@@ -139,246 +138,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Flatshadow Styles */
-.flatshadow {
+.flat-block {
 	.bg(fade( darken(@flatshadow, 20%), 15%) );
 	.space(10px 10px 0px 0px, 20px 16px 20px 20px);
 	.f(left);
-	
-	/* Title */
-	h1, h2, h3, h4, h5, h6 {
-		.space(0 0 5px 0, 0, 0);
-		.lineH(100%);
-	}
-	
-	/* Lists */
-	ul {
-		.space();
-		list-style: none;
-		
-		li {
-			.space();
-			display: inline-block;
-			a {
-				.bg(lighten(@flatshadow, 8%));
-				.space(0 4px 0 0px, 10px 20px, 0);
-				.f(left);				
-				text-decoration: none;				
-				.shadow(2px, 3px, 0, darken(@flatshadow, 15%));
-				color: darken(@flatshadow, 30%);
-				&:hover, &:focus {
-					.bg( lighten(@flatshadow, 20%) );
-					.shadow(2px, 3px, 0, darken(@flatshadow, 5%));
-					color: darken(@flatshadow, 40%);
-				}
-				&:active {
-					.transform(translate(2px, 3px));
-					.noShadow();
-				}
-			}			
-			/* Active State Button */
-			&.active {
-				a {
-					.bg(darken(@flatshadow, 30%));
-					.shadow(2px, 3px, 0, darken(@flatshadow, 40%));
-					color: lighten(@flatshadow, 40%);
-					&:hover, &:focus {
-						.bg( darken(@flatshadow, 25%) );
-						.shadow(2px, 3px, 0, darken(@flatshadow, 35%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Dark Gray */
-			&.dark {
-				a {
-					.bg(@dark);
-					.shadow(2px, 3px, 0, darken(@dark, 15%));
-					color: darken(@dark, 25%);
-					&:hover, &:focus {
-						.bg( lighten(@dark,10%) );
-						.shadow(2px, 3px, 0, darken(@dark, 5%));
-						color: darken(@dark, 15%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@dark, 20%));
-					.shadow(2px, 3px, 0, darken(@dark, 70%));
-					color: lighten(@dark, 40%);
-					&:hover, &:focus {
-						.bg(darken(@dark, 15%));
-						.shadow(2px, 3px, 0, darken(@dark, 60%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Blue */
-			&.blue {
-				a {
-					.bg(@blue);
-					.shadow(2px, 3px, 0, darken(@blue, 10%));
-					color: darken(@blue, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@blue,10%) );
-						.shadow(2px, 3px, 0, @blue);
-						color: darken(@blue, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@blue, 30%));
-					.shadow(2px, 3px, 0, darken(@blue, 40%));
-					color: lighten(@blue, 25%);
-					&:hover, &:focus {
-						.bg(darken(@blue, 25%));
-						.shadow(2px, 3px, 0, darken(@blue, 35%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Purple */
-			&.purple {
-				a {
-					.bg(@purple);
-					.shadow(0px, 3px, 0, darken(@purple, 10%));
-					color: darken(@purple, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@purple,10%) );
-						.shadow(0px, 3px, 0, @purple);
-						color: darken(@purple, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@purple, 30%));
-					.shadow(2px, 3px, 0, darken(@purple, 40%));
-					color: lighten(@purple, 25%);
-					&:hover, &:focus {
-						.bg(darken(@purple, 25%));
-						.shadow(2px, 3px, 0, darken(@purple, 35%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Pink */
-			&.pink {
-				a {
-					.bg(@pink);
-					.shadow(2px, 3px, 0, darken(@pink, 10%));
-					color: darken(@pink, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@pink,10%) );
-						.shadow(2px, 3px, 0, @pink);
-						color: darken(@pink, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@pink, 30%));
-					.shadow(2px, 3px, 0, darken(@pink, 40%));
-					color: lighten(@pink, 25%);
-					&:hover, &:focus {
-						.bg(darken(@pink, 25%));
-						.shadow(2px, 3px, 0, darken(@pink, 35%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Red */
-			&.red {
-				a {
-					.bg(@red);
-					.shadow(2px, 3px, 0, darken(@red, 10%));
-					color: darken(@red, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@red,10%) );
-						.shadow(2px, 3px, 0, @red);
-						color: darken(@red, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@red, 25%));
-					.shadow(2px, 3px, 0, darken(@red, 35%));
-					color: lighten(@red, 25%);
-					&:hover, &:focus {
-						.bg(darken(@red, 20%));
-						.shadow(2px, 3px, 0, darken(@red, 30%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Orange */
-			&.orange {
-				a {
-					.bg(@orange);
-					.shadow(2px, 3px, 0, darken(@orange, 10%));
-					color: darken(@orange, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@orange,10%) );
-						.shadow(2px, 3px, 0, @orange);
-						color: darken(@orange, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@orange, 20%));
-					.shadow(2px, 3px, 0, darken(@orange, 30%));
-					color: lighten(@orange, 25%);
-					&:hover, &:focus {
-						.bg(darken(@orange, 15%));
-						.shadow(2px, 3px, 0, darken(@orange, 25%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			/* Yellow */
-			&.yellow {
-				a {
-					.bg(@yellow);
-					.shadow(2px, 3px, 0, darken(@yellow, 10%));
-					color: darken(@yellow, 30%);
-					&:hover, &:focus {
-						.bg( lighten(@yellow,10%) );
-						.shadow(2px, 3px, 0, @yellow);
-						color: darken(@yellow, 30%);
-					}
-					&:active { .noShadow(); }
-				}
-				&.active a {
-					.bg(darken(@yellow, 20%));
-					.shadow(2px, 3px, 0, darken(@yellow, 30%));
-					color: lighten(@yellow, 20%);
-					&:hover, &:focus {
-						.bg(darken(@yellow, 15%));
-						.shadow(2px, 3px, 0, darken(@yellow, 25%));
-					}
-					&:active { .noShadow(); }
-				}
-			}
-			
-			
-		}
-	}
-	
-	/* Rounded Buttons */
-	&.rounded {
-		.rounded(6px);
-		ul {
-			li {
-				a {
-					.rounded(4px);
-				}
-			}
-		}
-	}
 	
 	/* Box Background Dark */
 	&.dark {
@@ -404,12 +167,6 @@ h1, h2, h3, h4, h5, h6 {
 		h1, h2, h3, h4, h5, h6 { color: darken(@pink, 20%); }
 	}
 	
-	/* Box Background Red */
-	&.red {
-		.bg(fade( darken(@red, 0%), 15%) );
-		h1, h2, h3, h4, h5, h6 { color: darken(@red, 10%); }
-	}
-	
 	/* Box Background Orange */
 	&.orange {
 		.bg(fade( darken(@orange, 0%), 15%) );
@@ -421,9 +178,199 @@ h1, h2, h3, h4, h5, h6 {
 		.bg(fade( darken(@yellow, 15%), 15%) );
 		h1, h2, h3, h4, h5, h6 { color: darken(@yellow, 25%); }
 	}
-	
 }
 
+/* Title */
+h1, h2, h3, h4, h5, h6 {
+	.space(0 0 5px 0, 0, 0);
+	.lineH(100%);
+}
+
+/* Lists */
+ul {
+	.space();
+	list-style: none;
+	
+	li {
+		.space();
+		display: inline-block;
+		a {
+			.bg(lighten(@flatshadow, 8%));
+			.space(0 4px 0 0px, 10px 20px, 0);
+			.f(left);				
+			text-decoration: none;				
+			.shadow(2px, 3px, 0, darken(@flatshadow, 15%));
+			color: darken(@flatshadow, 30%);
+			&:hover, &:focus {
+				.bg( lighten(@flatshadow, 20%) );
+				.shadow(2px, 3px, 0, darken(@flatshadow, 5%));
+				color: darken(@flatshadow, 40%);
+			}
+			&:active {
+				.transform(translate(2px, 3px));
+				.noShadow();
+			}
+			
+			/* Active State Button */
+			&.active {
+				.bg(darken(@flatshadow, 30%));
+				.shadow(2px, 3px, 0, darken(@flatshadow, 40%));
+				color: lighten(@flatshadow, 40%);
+				&:hover, &:focus {
+					.bg( darken(@flatshadow, 25%) );
+					.shadow(2px, 3px, 0, darken(@flatshadow, 35%));
+				}
+				&:active { .noShadow(); }
+			}
+			
+			/* Dark Gray */
+			&.dark {
+				.bg(@dark);
+				.shadow(2px, 3px, 0, darken(@dark, 15%));
+				color: darken(@dark, 25%);
+				&:hover, &:focus {
+					.bg( lighten(@dark,10%) );
+					.shadow(2px, 3px, 0, darken(@dark, 5%));
+					color: darken(@dark, 15%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@dark, 20%));
+					.shadow(2px, 3px, 0, darken(@dark, 70%));
+					color: lighten(@dark, 40%);
+					&:hover, &:focus {
+						.bg(darken(@dark, 15%));
+						.shadow(2px, 3px, 0, darken(@dark, 60%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+			
+			/* Blue */
+			&.blue {
+				.bg(@blue);
+				.shadow(2px, 3px, 0, darken(@blue, 10%));
+				color: darken(@blue, 30%);
+				&:hover, &:focus {
+					.bg( lighten(@blue,10%) );
+					.shadow(2px, 3px, 0, @blue);
+					color: darken(@blue, 30%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@blue, 30%));
+					.shadow(2px, 3px, 0, darken(@blue, 40%));
+					color: lighten(@blue, 25%);
+					&:hover, &:focus {
+						.bg(darken(@blue, 25%));
+						.shadow(2px, 3px, 0, darken(@blue, 35%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+			
+			/* Purple */
+			&.purple {
+				.bg(@purple);
+				.shadow(0px, 3px, 0, darken(@purple, 10%));
+				color: darken(@purple, 30%);
+				&:hover, &:focus {
+					.bg( lighten(@purple,10%) );
+					.shadow(0px, 3px, 0, @purple);
+					color: darken(@purple, 30%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@purple, 30%));
+					.shadow(2px, 3px, 0, darken(@purple, 40%));
+					color: lighten(@purple, 25%);
+					&:hover, &:focus {
+						.bg(darken(@purple, 25%));
+						.shadow(2px, 3px, 0, darken(@purple, 35%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+			
+			/* Pink */
+			&.pink {
+				.bg(@pink);
+				.shadow(2px, 3px, 0, darken(@pink, 10%));
+				color: darken(@pink, 30%);
+				&:hover, &:focus {
+					.bg( lighten(@pink,10%) );
+					.shadow(2px, 3px, 0, @pink);
+					color: darken(@pink, 30%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@pink, 30%));
+					.shadow(2px, 3px, 0, darken(@pink, 40%));
+					color: lighten(@pink, 25%);
+					&:hover, &:focus {
+						.bg(darken(@pink, 25%));
+						.shadow(2px, 3px, 0, darken(@pink, 35%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+			
+			/* Orange */
+			&.orange {
+				.bg(@orange);
+				.shadow(2px, 3px, 0, darken(@orange, 10%));
+				color: darken(@orange, 30%);
+				&:hover, &:focus {
+					.bg( lighten(@orange,10%) );
+					.shadow(2px, 3px, 0, @orange);
+					color: darken(@orange, 30%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@orange, 20%));
+					.shadow(2px, 3px, 0, darken(@orange, 30%));
+					color: lighten(@orange, 25%);
+					&:hover, &:focus {
+						.bg(darken(@orange, 15%));
+						.shadow(2px, 3px, 0, darken(@orange, 25%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+			
+			/* Yellow */
+			&.yellow {
+				.bg(@yellow);
+				.shadow(2px, 3px, 0, darken(@yellow, 10%));
+				color: darken(@yellow, 30%);
+				&:hover, &:focus {
+					.bg( lighten(@yellow,10%) );
+					.shadow(2px, 3px, 0, @yellow);
+					color: darken(@yellow, 30%);
+				}
+				&:active { .noShadow(); }
+				&.active {
+					.bg(darken(@yellow, 20%));
+					.shadow(2px, 3px, 0, darken(@yellow, 30%));
+					color: lighten(@yellow, 20%);
+					&:hover, &:focus {
+						.bg(darken(@yellow, 15%));
+						.shadow(2px, 3px, 0, darken(@yellow, 25%));
+					}
+					&:active { .noShadow(); }
+				}
+			}
+		}			
+	}
+}
+
+// generic classes
+.rounded {
+	.rounded(6px);
+}
+.pill {
+	.rounded(3em);
+}
 .clear {
 	clear: both;
 	padding: 15px 0;
