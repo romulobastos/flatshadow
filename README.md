@@ -9,7 +9,7 @@ Test on Codepen: http://codepen.io/romulobastos/pen/xAmcv
   
 #### Example
 ```
-<li><a class="flat pill blue" href="#">Flat Button</a></li>`
+<li><a class="flat pill blue" href="#">Flat Button</a></li>
 ```  
 #### Colors
 `.light` `.dark` `.blue` `.purple` `.pink` `.orange` `.yellow`
